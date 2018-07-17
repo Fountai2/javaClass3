@@ -7,17 +7,11 @@
   <groupId>uw.edu.fountainejf</groupId>
   <artifactId>cp130-1</artifactId>
   <version>1.0</version>
-
   <name>cp130-1</name>
-  <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
 
   <properties>
+    <student>fountaineJF</student>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-      <student>fountaineJF</student>
-      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 
   <repositories>
@@ -36,11 +30,24 @@
       <scope>runtime</scope>
     </dependency>
 
+    <!--<dependency>-->
+      <!--<groupId>org.slf4j</groupId>-->
+      <!--<artifactId>slf4j-api</artifactId>-->
+      <!--<version>1.7.12</version>-->
+      <!--<scope>runtime</scope>-->
+    <!--</dependency>-->
+
     <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-api</artifactId>
-      <version>1.7.12</version>
-      <scope>runtime</scope>
+      <groupId>edu.uw.ext</groupId>
+      <artifactId>cp130-framework</artifactId>
+      <version>1.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
     </dependency>
 
     <dependency>
@@ -54,24 +61,6 @@
       <artifactId>cp130-framework</artifactId>
       <version>1.0</version>
       <type>test-jar</type>
-      <scope>test</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>edu.uw.ext</groupId>
-      <artifactId>cp125-support</artifactId>
-      <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework</groupId>
-      <artifactId>spring-context</artifactId>
-      <version>3.2.4.RELEASE</version>
       <scope>test</scope>
     </dependency>
 
