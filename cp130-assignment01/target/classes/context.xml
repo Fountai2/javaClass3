@@ -21,7 +21,10 @@
   <bean id="AccountManagerFactory" class="uw.edu.fountainejf.SimpleAccountManagerFactory"/>
 
   <!-- Bean providing RDBMS implementation of edu.uw.ext.framework.account.DaoFactory -->
-  <bean id="DaoFactory" class="uw.edu.fountainejf.DaoFactory"/>
+  <bean id="DaoFactory" class="uw.edu.fountainejf.JsonDaoFactory"/>
+
+  <!-- Bean providing RDBMS implementation of edu.uw.ext.framework.account.BrokerFactory -->
+  <bean id="BrokerFactory" class="uw.edu.fountainejf.broker.SimpleBrokerFactory"/>
 
 </beans>
 

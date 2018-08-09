@@ -68,7 +68,7 @@ class SimpleAccount implements Account {
 
     @Override
     public void registerAccountManager(AccountManager accountManager) {
-        if(accountManager == null) {
+        if(this.accountManager == null) {
             this.accountManager = accountManager;
         } else {
             logger.info("Attempting to set the acct mgr");
@@ -131,15 +131,6 @@ class SimpleAccount implements Account {
 
     public byte[] getPasswordHash() {
         return this.passHash;
-        // if password is null, if not create a new by array of the length
-        //if passwordHash != null; {
-        // copy = new byte[passwordhash.length]
-        // System.arraycopy(passwordHash, 0, copy, 0, passwordHash.length);
-    //}
-    //return copy
     }
-
-
-
 
 }

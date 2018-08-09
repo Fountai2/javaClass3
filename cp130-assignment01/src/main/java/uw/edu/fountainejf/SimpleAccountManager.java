@@ -6,6 +6,7 @@ import edu.uw.ext.framework.account.AccountException;
 import edu.uw.ext.framework.account.AccountFactory;
 import edu.uw.ext.framework.account.AccountManager;
 import edu.uw.ext.framework.dao.AccountDao;
+import org.springframework.beans.BeansException;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.File;
@@ -17,18 +18,18 @@ public class SimpleAccountManager implements AccountManager {
 
     private AccountFactory accountFactory;
     private ClassPathXmlApplicationContext appContext;
-    private SimpleAccountDao dao;
+    private AccountDao dao;
     private String ENCODING = "ISO-8859-1";
     private String ALGORITHM = "SHA-256";
 
 
-//    public SimpleAccountManager newAccountManager(AccountDao dao) {
-//        this.dao = dao;
-//        AccountFactory factory = new SimpleAccountFactory();
-//        SimpleAccountManager accountManager = new SimpleAccountManager();
-//        return accountManager;
-//    }
-
+    public SimpleAccountManager(final AccountDao dao) {
+        this.dao = dao;
+        try {
+            accountFactory = new SimpleAccountFactory();
+        } catch (final BeansException ex) {
+        }
+    }
 
     /**
      * Write the account to the accounts folder
@@ -44,6 +45,9 @@ public class SimpleAccountManager implements AccountManager {
     @Override
     public Account getAccount(String s) throws AccountException {
         Account account = dao.getAccount(s);
+        if(account != null) {
+            account.registerAccountManager(this);
+        }
         return account;
     }
 
@@ -89,15 +93,18 @@ public class SimpleAccountManager implements AccountManager {
         }
     }
 
-    @Override
-    public boolean validateLogin(String s, String s1) throws AccountException {
+    public boolean validateLogin(final String accountName,
+                                              final String password)
+            throws AccountException {
         boolean valid = false;
-        final Account account = getAccount(s);
+        final Account account = getAccount(accountName);
 
         if (account != null) {
-            final byte[] passwordhash = hashPassword(s1);
-            valid = MessageDigest.isEqual(account.getPasswordHash(), passwordhash);
+            final byte[] passwordHash = hashPassword(password);
+            valid = MessageDigest.isEqual(account.getPasswordHash(),
+                    passwordHash);
         }
+
         return valid;
     }
 

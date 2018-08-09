@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uw.edu.fountainejf.TestSuite" time="3.199" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="uw.edu.fountainejf.TestSuite" time="22.881" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -7,7 +7,7 @@
     <property name="file.encoding.pkg" value="sun.io"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/test-classes:/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/classes:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-jdk14/1.7.12/slf4j-jdk14-1.7.12.jar:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jeremyf/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0-tests.jar:"/>
+    <property name="java.class.path" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/test-classes:/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/classes:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-jdk14/1.7.12/slf4j-jdk14-1.7.12.jar:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jeremyf/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0-tests.jar:/Users/jeremyf/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.5/jackson-databind-2.7.5.jar:/Users/jeremyf/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar:/Users/jeremyf/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.5/jackson-core-2.7.5.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
@@ -17,8 +17,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib"/>
-    <property name="sun.java.command" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/surefire/surefirebooter6514164015451723699.jar /Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/surefire 2018-07-13T12-44-26_287-jvmRun1 surefire7051194110027055942tmp surefire_08095498892922340763tmp"/>
-    <property name="surefire.test.class.path" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/test-classes:/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/classes:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-jdk14/1.7.12/slf4j-jdk14-1.7.12.jar:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jeremyf/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0-tests.jar:"/>
+    <property name="sun.java.command" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/surefire/surefirebooter7872633778457221237.jar /Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/surefire 2018-08-08T19-47-48_579-jvmRun1 surefire1748638219439997917tmp surefire_0796844593592461770tmp"/>
+    <property name="surefire.test.class.path" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/test-classes:/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/classes:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-jdk14/1.7.12/slf4j-jdk14-1.7.12.jar:/Users/jeremyf/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-context/4.3.5.RELEASE/spring-context-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-aop/4.3.5.RELEASE/spring-aop-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-beans/4.3.5.RELEASE/spring-beans-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-core/4.3.5.RELEASE/spring-core-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/jeremyf/.m2/repository/org/springframework/spring-expression/4.3.5.RELEASE/spring-expression-4.3.5.RELEASE.jar:/Users/jeremyf/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/jeremyf/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jeremyf/.m2/repository/edu/uw/ext/cp130-framework/1.0/cp130-framework-1.0-tests.jar:/Users/jeremyf/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.5/jackson-databind-2.7.5.jar:/Users/jeremyf/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar:/Users/jeremyf/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.5/jackson-core-2.7.5.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/jeremyf"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/surefire/surefirebooter6514164015451723699.jar"/>
+    <property name="surefire.real.class.path" value="/Users/jeremyf/personalProjects/javaClassThree/cp130-assignment01/target/surefire/surefirebooter7872633778457221237.jar"/>
     <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/classes"/>
     <property name="java.util.logging.config.file" value="src/main/resources/logging.properties"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -59,22 +59,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testBadNameAccountCreation" classname="test.AccountTest" time="0.431"/>
-  <testcase name="testBadBalanceAccountCreation" classname="test.AccountTest" time="0.087"/>
-  <testcase name="testGoodAccountCreation" classname="test.AccountTest" time="0.034"/>
-  <testcase name="testSetAccountName" classname="test.AccountTest" time="0.042"/>
-  <testcase name="testReloadFile" classname="test.AccountManagerTest" time="0.596"/>
-  <testcase name="testCreateDuplicateUsername" classname="test.AccountManagerTest" time="0.385"/>
-  <testcase name="testClose" classname="test.AccountManagerTest" time="0.053"/>
-  <testcase name="testPersist" classname="test.AccountManagerTest" time="0.144"/>
-  <testcase name="testGetAccount" classname="test.AccountManagerTest" time="0.29"/>
-  <testcase name="testValidate" classname="test.AccountManagerTest" time="0.312"/>
-  <testcase name="testRegistration" classname="test.AccountManagerTest" time="0.19"/>
-  <testcase name="testDeleteAccount" classname="test.AccountManagerTest" time="0.131"/>
-  <testcase name="testMultipleGetAccount" classname="test.AccountManagerTest" time="0.148"/>
-  <testcase name="testClose" classname="test.DaoTest" time="0"/>
-  <testcase name="testReset" classname="test.DaoTest" time="0.005"/>
-  <testcase name="testDelete" classname="test.DaoTest" time="0.037"/>
-  <testcase name="testReload" classname="test.DaoTest" time="0.082"/>
-  <testcase name="testSetGet" classname="test.DaoTest" time="0.14"/>
+  <testcase name="testRequestQuote" classname="test.BrokerTest" time="0.469"/>
+  <testcase name="testClose" classname="test.BrokerTest" time="0.035"/>
+  <testcase name="testGetAccount" classname="test.BrokerTest" time="0.129"/>
+  <testcase name="testBrokerExchangeOpen" classname="test.BrokerTest" time="10.059"/>
+  <testcase name="testDeleteAccount" classname="test.BrokerTest" time="0.05"/>
+  <testcase name="testBrokerExchangeClosed" classname="test.BrokerTest" time="12.074"/>
 </testsuite>

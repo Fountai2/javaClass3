@@ -16,7 +16,8 @@ public class App
 
         byte[] passwordBytes  = new byte[]{98, 101, 116, 116, 101, 114, 112, 97, 115, 115, 119, 111, 114, 100};
 
-//        Account account = this.accountFactory.newAccount("test account", 1000000, passwordBytes);
+        AccountFactory factory = new SimpleAccountFactory();
+        Account account = factory.newAccount("test account", passwordBytes, 100000);
 //        System.out.println(account);
 //        System.out.println(account.getName() +" ::::: " + account.getBalance() + "   ::::  " + account.getPasswordHash() );
     }
